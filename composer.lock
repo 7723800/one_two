@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "bb334092becd576d3f86e1c2c84b9e54",
+    "content-hash": "86cca2988a147ebb6b1329685fd338ef",
     "packages": [
         {
             "name": "brick/math",
@@ -184,6 +184,62 @@
                 "source": "https://github.com/cakephp/chronos"
             },
             "time": "2023-09-12T03:12:29+00:00"
+        },
+        {
+            "name": "coderello/laravel-nova-lang",
+            "version": "2.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/coderello/laravel-nova-lang.git",
+                "reference": "ea0f94946090e5324fbf7e2ac7d3dcb9789ee400"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/coderello/laravel-nova-lang/zipball/ea0f94946090e5324fbf7e2ac7d3dcb9789ee400",
+                "reference": "ea0f94946090e5324fbf7e2ac7d3dcb9789ee400",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1|^8.0"
+            },
+            "require-dev": {
+                "ext-curl": "*",
+                "illuminate/console": "^8.0",
+                "illuminate/events": "^8.0",
+                "illuminate/filesystem": "^8.0",
+                "laravel/nova": "~4.0",
+                "php": "^8.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Coderello\\LaravelNovaLang\\Providers\\LaravelNovaLangServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Coderello\\LaravelNovaLang\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Language support for Laravel Nova.",
+            "keywords": [
+                "lang",
+                "language",
+                "laravel",
+                "nova",
+                "support"
+            ],
+            "support": {
+                "issues": "https://github.com/coderello/laravel-nova-lang/issues",
+                "source": "https://github.com/coderello/laravel-nova-lang/tree/2.0.2"
+            },
+            "time": "2023-04-20T13:42:00+00:00"
         },
         {
             "name": "dflydev/dot-access-data",
