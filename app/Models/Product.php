@@ -59,7 +59,8 @@ class Product extends Model implements HasMedia
     protected $appends = [
         "imageUrl",
         "description",
-        "isOutOfStock"
+        "isOutOfStock",
+        "name"
     ];
 
     /**
@@ -82,6 +83,17 @@ class Product extends Model implements HasMedia
         "pivot",
         "media"
     ];
+
+    /**
+     * Localized product name.
+     *
+     * @return string
+     */
+    public function getNameAttribute(): ?string
+    {
+        $column = "name_" . config("app.locale");
+        return $this->getAttribute($column);
+    }
 
     /**
      * Product image url.

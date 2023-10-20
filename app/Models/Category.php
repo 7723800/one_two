@@ -66,8 +66,20 @@ class Category extends Model implements HasMedia
      * @var array
      */
     protected $appends = [
-        "imageUrl"
+        "imageUrl",
+        "name"
     ];
+
+    /**
+     * Localized category name.
+     *
+     * @return string
+     */
+    public function getNameAttribute(): ?string
+    {
+        $column = "name_" . config("app.locale");
+        return $this->getAttribute($column);
+    }
 
     /**
      * Product image url.
